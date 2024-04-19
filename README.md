@@ -27,7 +27,6 @@ Based on [WordPress Advanced Administration Handbook](https://docs.google.com/do
 
 - [README](README.md)
 - [LICENSE](LICENSE)
-- [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
 - [WordPress Advanced Administration Handbook](index.md) ([🔗](https://developer.wordpress.org/advanced-administration/))
   - [Before You Install](before-install/index.md) ([🔗](https://developer.wordpress.org/advanced-administration/before-install/))
     - [Creating Database for WordPress](before-install/creating-database.md) ([🔗](https://developer.wordpress.org/advanced-administration/before-install/creating-database/))
@@ -106,7 +105,7 @@ Based on [WordPress Advanced Administration Handbook](https://docs.google.com/do
 
 ### External linking
 
-- [External Linking Policy – "Commercial blogs"](https://make.wordpress.org/docs/2020/07/06/external-linking-policy-commercial-blogs/)
+- [External Linking Policy (Summary)](https://make.wordpress.org/docs/handbook/documentation-team-handbook/external-linking-policy/)
 
 ### Example domains
 

@@ -2,6 +2,12 @@
 
 On computer file systems, different files and directories have **permissions** that specify who and what can read, write, modify and access them. This is important because WordPress may need access to write to files in your `wp-content` directory to enable certain functions.
 
+## Short explanation
+
+Linux [file permissions](https://en.wikipedia.org/wiki/File_system_permissions) consist primarily of three components -- the permissions the owner of the file or folder has, the permissions members of the group that owns the file or folder have, and the permissions that anyone else has for accessing or modifying the file and folder. The three permission components are usually represented using three numbers in order of the owner's permission level, the group's permission level, and everyone's permission level. _There is technically a fourth component, but that is beyond what we need to know to secure WordPress. It will not be discussed here._
+
+There are three kinds of access each for the user, the group, and everyone else. They are read access, write access, and execute access. Read access lets you read the contents of the file or the directory. Write access lets you modify the file or the directory. And execute access lets you run the file like a program or a script.
+
 ## Permission Modes
 
 ```
@@ -98,11 +104,11 @@ In this specific type setup, WordPress will detect that it can directly create f
 
 Popular methods used by sysadmins for this setup are:
 
-* [suPHP](http://www.suphp.org/Home.html), runs through php-cgi, currently unmaintained since 2013.
+* [suPHP](https://smarsching.github.io/suphp/Home.html), runs through php-cgi, currently unmaintained since 2013.
 * [mod_ruid2](https://github.com/mind04/mod-ruid2), apache module, currently unmaintained since 2013.
 * [mpm-itk](http://mpm-itk.sesse.net/), apache module.
-* [mod_fcgid](http://httpd.apache.org/mod_fcgid/), an Apache module and FastCGI server with more extensive configuration.
-* [PHP-FPM](http://php-fpm.org/), an alternative FastCGI server with shared OPCode, for use with Apache and Nginx.
+* [mod_fcgid](https://httpd.apache.org/mod_fcgid/), an Apache module and FastCGI server with more extensive configuration.
+* [PHP-FPM](https://php-fpm.org/), an alternative FastCGI server with shared OPCode, for use with Apache and Nginx.
 
 ## Using an FTP Client
 
@@ -130,7 +136,7 @@ You can now see that the file permissions have been changed.
 
 ### Unhide the hidden files
 
-By default, most [FTP Clients](https://developer.wordpress.org/advanced-administration/upgrade/ftp/), including [FileZilla](http://filezilla.sourceforge.net/), keep hidden files, those files beginning with a period (.), from being displayed. But, at some point, you may need to see your hidden files so that you can change the permissions on that file. For example, you may need to make your [.htaccess](https://wordpress.org/documentation/article/glossary#htaccess) file, the file that controls [permalinks](https://wordpress.org/documentation/article/using-permalinks/), writeable.
+By default, most [FTP Clients](https://developer.wordpress.org/advanced-administration/upgrade/ftp/), including [FileZilla](https://sourceforge.net/projects/filezilla/), keep hidden files, those files beginning with a period (.), from being displayed. But, at some point, you may need to see your hidden files so that you can change the permissions on that file. For example, you may need to make your [.htaccess](https://wordpress.org/documentation/article/glossary#htaccess) file, the file that controls [permalinks](https://wordpress.org/documentation/article/using-permalinks/), writeable.
 
 To display hidden files in FileZilla, in it is necessary to select 'View' from the top menu, then select 'Show hidden files'. The screen display of files will refresh and any previously hidden file should come into view.
 

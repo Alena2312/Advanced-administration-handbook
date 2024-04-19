@@ -17,7 +17,6 @@ This page contains a more detailed version of [the upgrade instructions](https:/
 7. [Delete the old WordPress files](https://developer.wordpress.org/advanced-administration/upgrade/upgrading/#step-7-delete-the-old-wordpress-files) on your site, but **DO NOT DELETE**  
 		– `wp-config.php` file;
 		– `wp-content` folder; Special Exception: the `wp-content/cache` and the `wp-content/plugins/widgets` folders should be deleted.
-		– `wp-images` folder;
 		– `.htaccess` file–if you have added custom rules to your `.htaccess`, do not delete it;
 		– `robots.txt` file–if your blog lives in the root of your site (ie. the blog is the site) and you have created such a file, do not delete it.
 
@@ -141,8 +140,8 @@ Note: Make sure the database user name registered to WordPress has permission to
 
 If you want to run the upgrade script manually:
 
-* If WordPress is installed in the root directory, point your browser to: http://example.com/wp-admin/upgrade.php
-* If WordPress is installed in its own subdirectory called `blog`, for example, point your browser to: http://example.com/blog/wp-admin/upgrade.php
+* If WordPress is installed in the root directory, point your browser to: https://example.com/wp-admin/upgrade.php
+* If WordPress is installed in its own subdirectory called `blog`, for example, point your browser to: https://example.com/blog/wp-admin/upgrade.php
 
 If you experience difficulties with login after your upgrade, it is worth clearing your browser's cookies.
 
@@ -360,7 +359,7 @@ apply_filters( 'auto_core_update_send_email', true, $type, $core_update, $result
 ### Resources {#resources}
 
 * More examples at [https://make.wordpress.org/core/2013/10/25/the-definitive-guide-to-disabling-auto-updates-in-wordpress-3-7/](https://make.wordpress.org/core/2013/10/25/the-definitive-guide-to-disabling-auto-updates-in-wordpress-3-7/)
-* More information here: [http://wordpress.stackexchange.com/questions/120081/how-do-i-configure-automatic-updates-in-wordpress-3-7](http://wordpress.stackexchange.com/questions/120081/how-do-i-configure-automatic-updates-in-wordpress-3-7)
+* More information here: [How Do I Configure Automatic Updates in WordPress 3.7?](https://wordpress.stackexchange.com/questions/120081/how-do-i-configure-automatic-updates-in-wordpress-3-7)
 * Info about wp-cli conflict: [https://github.com/wp-cli/wp-cli/issues/1310](https://github.com/wp-cli/wp-cli/issues/1310)
 
 ## Changelog

@@ -48,12 +48,12 @@ Your MySQL connection id is 5340 to server version: 3.23.54
 Type 'help;' or '\\h' for help. Type '\\c' to clear the buffer.  
   
 mysql> CREATE DATABASE databasename;  
-Query OK, 1 row affected (0.00 sec)  
-  
-mysql> GRANT ALL PRIVILEGES ON databasename.* TO "wordpressusername"@"hostname"
-\-> IDENTIFIED BY "password";  
-Query OK, 0 rows affected (0.00 sec)  
-  
+Query OK, 1 row affected (0.00 sec)
+
+mysql> CREATE USER "wordpressusername"@"hostname" IDENTIFIED BY "password";
+mysql> GRANT ALL PRIVILEGES ON databasename.* TO "wordpressusername"@"hostname";
+Query OK, 0 rows affected (0.00 sec)
+
 mysql> FLUSH PRIVILEGES;  
 Query OK, 0 rows affected (0.01 sec)   
   
@@ -73,7 +73,7 @@ If you need to write these values somewhere, avoid writing them in the system th
 
 ## Using Plesk
 
-If your hosting provider supplies the [Plesk](http://www.plesk.com/) hosting control panel and you want to install WordPress manually, follow the instructions below to create a database:
+If your hosting provider supplies the [Plesk](https://www.plesk.com/) hosting control panel and you want to install WordPress manually, follow the instructions below to create a database:
 
 1. Log in to Plesk.
 2. Click **Databases** in the Custom Website area of your website on the Websites & Domains page:  
